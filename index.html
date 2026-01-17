@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Token Swap App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Token Swap App</h1>
+
+    <button id="connectBtn">Connect Wallet</button>
+    <br><br>
+
+    <input type="text" id="contractAddress" placeholder="Enter swap contract address">
+    <br><br>
+
+    <input type="text" id="tokenA" placeholder="Token A address">
+    <input type="text" id="tokenB" placeholder="Token B address">
+    <br><br>
+
+    <input type="number" id="amount" placeholder="Amount to swap">
+    <br><br>
+
+    <button id="swapBtn">Swap</button>
+
+    <p><strong>Status:</strong> <span id="status">Idle</span></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="config.js"></script>
+    <script src="wallet.js"></script>
+    <script src="abi.js"></script>
+    <script src="swap.js"></script>
+    <script src="ui.js"></script>
+    <script src="utils.js"></script>
+    <script src="logger.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
